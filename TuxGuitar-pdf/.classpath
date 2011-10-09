@@ -2,10 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="../lib/swt.jar"/>
-	<classpathentry kind="lib" path="../lib/itext.jar"/>
-	<classpathentry kind="lib" path="../lib/itext-xtra.jar"/>
-	<classpathentry kind="lib" path="..lib/itextpdf.jar"/>
+	<classpathentry kind="lib" path="/home/knoxie/git/SE452-Tux-Guitar/lib/swt.jar"/>
+	<classpathentry kind="lib" path="/home/knoxie/git/SE452-Tux-Guitar/lib/itext.jar"/>
+	<classpathentry kind="lib" path="/home/knoxie/git/SE452-Tux-Guitar/lib/itext-xtra.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/TuxGuitar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="var" path="COVIEW_HOME/codignjunit.jar"/>
+	<classpathentry kind="var" path="COVIEW_HOME/jmockit.jar"/>
+	<classpathentry kind="var" path="COVIEW_HOME/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="var" path="COVIEW_HOME/hamcrest-library-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
