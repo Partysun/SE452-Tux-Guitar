@@ -17,7 +17,7 @@ public class TGConverterFormatTest extends TestCase {
 		// Constructor under test arguments// Constructor under test
 		TGConverterFormat constructorInstance = new TGConverterFormat(
 				extension, exporter);
-		fail("Test method not implemented.");
+		assertNotNull(constructorInstance);
 	}
 
 	/**
@@ -26,13 +26,13 @@ public class TGConverterFormatTest extends TestCase {
 	public void testGetExtension() {
 
 		// Constructor arguments
-		String extension = null;
-		Object exporter = null;
+		String extension = "test";
+		Object exporter = new Object();
 		TGConverterFormat constructorInstance = new TGConverterFormat(
 				extension, exporter);
 
 		String methodReturn = constructorInstance.getExtension();
-		fail("Test method not implemented.");
+		assertEquals(extension, constructorInstance.getExtension());
 	}
 
 	/**
@@ -41,13 +41,13 @@ public class TGConverterFormatTest extends TestCase {
 	public void testGetExporter() {
 
 		// Constructor arguments
-		String extension = null;
-		Object exporter = null;
+		String extension = "test";
+		Object exporter = new Object();;
 		TGConverterFormat constructorInstance = new TGConverterFormat(
 				extension, exporter);
 
 		Object methodReturn = constructorInstance.getExporter();
-		fail("Test method not implemented.");
+		assertNotNull(constructorInstance.getExporter());
 	}
 
 }
