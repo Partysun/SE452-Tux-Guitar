@@ -1,0 +1,8 @@
+Package: tuxguitar
+Version: 1.2-ubuntu-x86
+Architecture: i386
+Depends: openjdk-6-jre | sun-java6-jre | sun-java5-jre | java-gcj-compat-headless | java-virtual-machine, libitext-java, libswt-gtk-3.4-java | libswt3.2-gtk-java, libswt-cairo-gtk-3.4-jni | libswt3.2-gtk-java, libswt-mozilla-gtk-3.4-jni | libswt3.2-gtk-java 
+Priority: optional
+Section: Multimedia
+Maintainer: Julian Casadesus julian@casadesus.com.ar
+Description: TuxGuitar is a multitrack guitar tablature editor and player

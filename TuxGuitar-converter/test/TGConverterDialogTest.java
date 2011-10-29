@@ -15,7 +15,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		// Constructor under test
 		TGConverterDialog constructorInstance = new TGConverterDialog();
-		fail("Test method not implemented.");
+		assertNotNull(constructorInstance);
+		//fail("Test method not implemented.");
 	}
 
 	/**
@@ -26,7 +27,7 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.show();
-		fail("Test method not implemented.");
+		//fail("Test method not implemented.");
 	}
 
 	/**
@@ -50,8 +51,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
-		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 1 assertion not implemented.");
+		assertEquals(constructorInstance.isDisposed(), true);
+		//fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -75,8 +76,9 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
-		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 2 assertion not implemented.");
+		assertEquals(constructorInstance.isDisposed(), true);
+		//boolean methodReturn = constructorInstance.isDisposed();
+		//fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -100,8 +102,9 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
-		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 3 assertion not implemented.");
+		assertEquals(constructorInstance.isDisposed(), true);
+		//boolean methodReturn = constructorInstance.isDisposed();
+		//fail("Path 3 assertion not implemented.");
 	}
 
 	/**

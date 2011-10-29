@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=TuxGuitar
+GenericName=TuxGuitar
+Comment=TuxGuitar
+Type=Application
+MimeType=audio/x-tuxguitar;audio/x-gtp;audio/x-ptb
+Categories=Application;AudioVideo;
+Exec=tuxguitar %F
+Icon=/usr/share/tuxguitar/skins/Lavender/icon-96x96.png
+Terminal=false
+StartupNotify=false
