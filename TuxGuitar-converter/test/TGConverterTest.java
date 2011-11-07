@@ -50,7 +50,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFileName), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -148,7 +148,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFileName), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFileName), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFileName), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -246,7 +246,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFileName), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -277,7 +277,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFilename), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
@@ -309,7 +309,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		assertEquals(File.exists(convertFilename), true);
+		assertEquals(new File(convertFileName).exists(), true);
 	}
 
 	/**
