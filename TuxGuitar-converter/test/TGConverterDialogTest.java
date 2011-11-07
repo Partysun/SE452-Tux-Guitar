@@ -16,7 +16,6 @@ public class TGConverterDialogTest extends TestCase {
 		// Constructor under test
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 		assertNotNull(constructorInstance);
-		//fail("Test method not implemented.");
 	}
 
 	/**
@@ -27,7 +26,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.show();
-		//fail("Test method not implemented.");
 	}
 
 	/**
@@ -51,8 +49,9 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		constructorInstance.show();
+		constructorInstance.close();
 		assertEquals(constructorInstance.isDisposed(), true);
-		//fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -76,9 +75,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		// Don't open it for the second path
 		assertEquals(constructorInstance.isDisposed(), true);
-		//boolean methodReturn = constructorInstance.isDisposed();
-		//fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -102,9 +100,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		// Same as path #2
 		assertEquals(constructorInstance.isDisposed(), true);
-		//boolean methodReturn = constructorInstance.isDisposed();
-		//fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -233,8 +230,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		// Only 1 path in this method, so just call it
 		constructorInstance.loadProperties();
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -259,8 +256,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		// Try to pass in a variable to the load properties method
 		constructorInstance.loadProperties(layout);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -284,8 +281,8 @@ public class TGConverterDialogTest extends TestCase {
 
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
+		// Try to pass in a variable to the load properties method
 		constructorInstance.loadProperties(layout);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -311,7 +308,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.loadProperties(layout);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -322,7 +318,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.loadIcons();
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -348,7 +343,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -373,7 +367,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -399,7 +392,6 @@ public class TGConverterDialogTest extends TestCase {
 		TGConverterDialog constructorInstance = new TGConverterDialog();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 3 assertion not implemented.");
 	}
 
 }

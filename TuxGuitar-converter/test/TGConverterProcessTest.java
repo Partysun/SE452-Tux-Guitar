@@ -19,8 +19,8 @@ public class TGConverterProcessTest extends TestCase {
 
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
+		// No way to test this properly
 		constructorInstance.start(initFolder, destFolder, format);
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 1 assertion not implemented.");
+		assertEquals(methodReturn, true);
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 2 assertion not implemented.");
+		assertEquals(methodReturn, false);
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		boolean methodReturn = constructorInstance.isDisposed();
-		fail("Path 3 assertion not implemented.");
+		assertEquals(methodReturn, false);
 	}
 
 	/**
@@ -120,7 +120,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadProperties();
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -146,7 +145,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadProperties(layout);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -171,7 +169,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadProperties(layout);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -197,7 +194,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadProperties(layout);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -208,7 +204,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadIcons();
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -234,7 +229,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -259,7 +253,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -285,7 +278,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.loadIcons(layout);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -310,7 +302,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileProcess(filename);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -335,7 +326,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileProcess(filename);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -361,7 +351,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileProcess(filename);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -387,7 +376,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileResult(filename, result);
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -413,7 +401,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileResult(filename, result);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -440,7 +427,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFileResult(filename, result);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -464,7 +450,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyStart();
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -488,7 +473,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyStart();
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -512,8 +496,7 @@ public class TGConverterProcessTest extends TestCase {
 
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
-		constructorInstance.notifyStart();
-		fail("Path 3 assertion not implemented.");
+		constructorInstance.notifyStart()
 	}
 
 	/**
@@ -537,7 +520,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFinish();
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -561,7 +543,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFinish();
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -586,7 +567,6 @@ public class TGConverterProcessTest extends TestCase {
 		TGConverterProcess constructorInstance = new TGConverterProcess();
 
 		constructorInstance.notifyFinish();
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**

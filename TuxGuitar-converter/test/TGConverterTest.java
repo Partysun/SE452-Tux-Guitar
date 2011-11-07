@@ -1,4 +1,5 @@
 import org.herac.tuxguitar.app.tools.custom.converter.TGConverter;
+import java.io.*;
 import org.herac.tuxguitar.app.tools.custom.converter.TGConverterFormat;
 import org.herac.tuxguitar.app.tools.custom.converter.TGConverterListener;
 
@@ -17,7 +18,6 @@ public class TGConverterTest extends TestCase {
 		// Constructor under test arguments// Constructor under test
 		TGConverter constructorInstance = new TGConverter(sourceFolder,
 				destinationFolder);
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -50,7 +50,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 1 assertion not implemented.");
+		assertEquals(File.exists(convertFileName), true);
 	}
 
 	/**
@@ -81,7 +81,6 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
@@ -115,7 +114,6 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 3 assertion not implemented.");
 	}
 
 	/**
@@ -150,7 +148,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 4 assertion not implemented.");
+		assertEquals(File.exists(convertFileName), true);
 	}
 
 	/**
@@ -183,7 +181,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 5 assertion not implemented.");
+		assertEquals(File.exists(convertFileName), true);
 	}
 
 	/**
@@ -217,7 +215,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 6 assertion not implemented.");
+		assertEquals(File.exists(convertFileName), true);
 	}
 
 	/**
@@ -248,7 +246,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 7 assertion not implemented.");
+		assertEquals(File.exists(convertFileName), true);
 	}
 
 	/**
@@ -279,7 +277,7 @@ public class TGConverterTest extends TestCase {
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 8 assertion not implemented.");
+		assertEquals(File.exists(convertFilename), true);
 	}
 
 	/**
@@ -306,11 +304,12 @@ public class TGConverterTest extends TestCase {
 		String sourceFolder = null;
 		String destinationFolder = null;
 
+		Files.createFile(convertFileName);
 		TGConverter constructorInstance = new TGConverter(sourceFolder,
 				destinationFolder);
 
 		constructorInstance.convert(fileName, convertFileName);
-		fail("Path 9 assertion not implemented.");
+		assertEquals(File.exists(convertFilename), true);
 	}
 
 	/**

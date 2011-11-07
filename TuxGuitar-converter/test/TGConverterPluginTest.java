@@ -15,7 +15,7 @@ public class TGConverterPluginTest extends TestCase {
 		TGConverterPlugin constructorInstance = new TGConverterPlugin();
 
 		String methodReturn = constructorInstance.getName();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "BatchConverter");
 	}
 
 	/**
@@ -26,7 +26,7 @@ public class TGConverterPluginTest extends TestCase {
 		TGConverterPlugin constructorInstance = new TGConverterPlugin();
 
 		String methodReturn = constructorInstance.getAuthor();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "Nikola Kolarovic & Julian Casadesus");
 	}
 
 	/**
@@ -37,7 +37,8 @@ public class TGConverterPluginTest extends TestCase {
 		TGConverterPlugin constructorInstance = new TGConverterPlugin();
 
 		String methodReturn = constructorInstance.getDescription();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "Converts folder containing various tab formats into wanted file format.\n" +
+			       "Depending on your loaded file format plugins, you can read and write.");
 	}
 
 	/**
@@ -48,7 +49,7 @@ public class TGConverterPluginTest extends TestCase {
 		TGConverterPlugin constructorInstance = new TGConverterPlugin();
 
 		String methodReturn = constructorInstance.getVersion();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "1.0");
 	}
 
 	/**
@@ -78,7 +79,6 @@ public class TGConverterPluginTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -94,7 +94,6 @@ public class TGConverterPluginTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -127,7 +126,6 @@ public class TGConverterPluginTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -160,7 +158,6 @@ public class TGConverterPluginTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**
