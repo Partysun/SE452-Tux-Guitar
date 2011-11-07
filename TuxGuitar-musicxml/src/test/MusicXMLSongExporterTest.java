@@ -19,7 +19,7 @@ public class MusicXMLSongExporterTest extends TestCase {
 		MusicXMLSongExporter constructorInstance = new MusicXMLSongExporter();
 
 		String methodReturn = constructorInstance.getExportName();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "MusicXML");
 	}
 
 	/**
@@ -28,9 +28,9 @@ public class MusicXMLSongExporterTest extends TestCase {
 	public void testGetFileFormat() {
 
 		MusicXMLSongExporter constructorInstance = new MusicXMLSongExporter();
-
+		TGFileFormat format = new TGFileFormat("MusicXML","*.xml");
 		TGFileFormat methodReturn = constructorInstance.getFileFormat();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, format);
 	}
 
 	/**
@@ -43,7 +43,6 @@ public class MusicXMLSongExporterTest extends TestCase {
 		MusicXMLSongExporter constructorInstance = new MusicXMLSongExporter();
 
 		boolean methodReturn = constructorInstance.configure(setDefaults);
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -57,7 +56,6 @@ public class MusicXMLSongExporterTest extends TestCase {
 		MusicXMLSongExporter constructorInstance = new MusicXMLSongExporter();
 
 		constructorInstance.init(factory, stream);
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -90,7 +88,6 @@ public class MusicXMLSongExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -123,7 +120,6 @@ public class MusicXMLSongExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 2 assertion not implemented.");
 	}
 
 }

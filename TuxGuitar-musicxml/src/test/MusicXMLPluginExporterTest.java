@@ -15,7 +15,7 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		MusicXMLPluginExporter constructorInstance = new MusicXMLPluginExporter();
 
 		String methodReturn = constructorInstance.getName();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "MusicXML exporter");
 	}
 
 	/**
@@ -26,7 +26,7 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		MusicXMLPluginExporter constructorInstance = new MusicXMLPluginExporter();
 
 		String methodReturn = constructorInstance.getAuthor();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "Julian Casadesus <julian@casadesus.com.ar>");
 	}
 
 	/**
@@ -37,7 +37,7 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		MusicXMLPluginExporter constructorInstance = new MusicXMLPluginExporter();
 
 		String methodReturn = constructorInstance.getDescription();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "MusicXML exporter plugin");
 	}
 
 	/**
@@ -48,7 +48,7 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		MusicXMLPluginExporter constructorInstance = new MusicXMLPluginExporter();
 
 		String methodReturn = constructorInstance.getVersion();
-		fail("Test method not implemented.");
+		assertEquals(methodReturn, "1.0");
 	}
 
 	/**
@@ -71,7 +71,6 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -87,7 +86,6 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Test method not implemented.");
 	}
 
 	/**
@@ -120,7 +118,6 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 1 assertion not implemented.");
 	}
 
 	/**
@@ -153,7 +150,6 @@ public class MusicXMLPluginExporterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 2 assertion not implemented.");
 	}
 
 	/**

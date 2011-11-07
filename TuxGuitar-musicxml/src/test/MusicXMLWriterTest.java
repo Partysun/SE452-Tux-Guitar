@@ -1,5 +1,8 @@
 package test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 import junit.framework.TestCase;
@@ -15,10 +18,16 @@ public class MusicXMLWriterTest extends TestCase {
 	public void testMusicXMLWriterOutputStream() {
 		// Method under test arguments
 		OutputStream stream = null;
+		try {
+			stream = new FileOutputStream("test.xml");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// Constructor under test arguments// Constructor under test
 		MusicXMLWriter constructorInstance = new MusicXMLWriter(stream);
-		fail("Test method not implemented.");
+		if (constructorInstance == null) fail("null return");
 	}
 
 	/**
@@ -44,6 +53,12 @@ public class MusicXMLWriterTest extends TestCase {
 
 		// Constructor arguments
 		OutputStream stream = null;
+		try {
+			stream = new FileOutputStream("test.xml");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		MusicXMLWriter constructorInstance = new MusicXMLWriter(stream);
 
@@ -53,7 +68,7 @@ public class MusicXMLWriterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 1 assertion not implemented.");
+		assertEquals(new File("test.xml").exists(), true);
 	}
 
 	/**
@@ -79,7 +94,12 @@ public class MusicXMLWriterTest extends TestCase {
 		TGSong song = null;
 
 		// Constructor arguments
-		OutputStream stream = null;
+		OutputStream stream;
+		try {
+			stream = new FileOutputStream("test.xml");
+		} catch (Exception e) {
+			fail("exception was thrown");
+		}
 
 		MusicXMLWriter constructorInstance = new MusicXMLWriter(stream);
 
@@ -89,7 +109,7 @@ public class MusicXMLWriterTest extends TestCase {
 		} catch (Exception exception) {
 			fail("Unexpected exception: " + exception.toString());
 		}
-		fail("Path 2 assertion not implemented.");
+		assertEquals(new File("test.xml").exists(), true);
 	}
 
 	/**
